@@ -1,0 +1,76 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta http-equiv="Content-Type" content="text/html; charset=utf-8" />
+    <title>System's Page</title>
+    <link rel="stylesheet" href="css/styles.css" type="text/css" />
+  </head>
+  <body>
+    <header>
+      <table>
+        <tr>
+          <th>BOCA</th>
+          <th>Username: Systems</th>
+          <th>contest not running</th>
+        </tr>
+      </table>
+      <nav>
+        <a href="contest.php">Contest</a>
+        <a href="importxml.php">Import</a>
+        <a href="option.php">Options</a>
+        <a href="../index.php">Logout</a>
+      </nav>
+    </header>
+    <div class="contest-form">
+      <form>
+        <h3>Contest number:</h3>
+        <div class="select-box">
+          <select name="contest">
+            <option value="new">new</option>
+          </select>
+        </div>
+        <label for="Name">Name:</label>
+        <input type="text" class="field" name="name" />
+        <label for="Start date">Start date:</label>
+        <p>HH:MM</p>
+        <input type="text" class="field" name="startdateh" />
+        <p>HH:MM</p>
+        <input type="text" class="field" name="startdatemin" />
+        <p>DD/MM/YYYY</p>
+        <input type="text" class="field" name="startdated" />
+        <p>/</p>
+        <input type="text" class="field" name="startdatem" />
+        <p>/</p>
+        <input type="text" class="field" name="startdatey" />
+        <label for="Duration">Duration (in minutes):</label>
+        <input type="text" class="field" name="duration" />
+        <label for="Stop answering">Stop answering (in minutes):</label>
+        <input type="text" class="field" name="lastmileanswer" />
+        <label for="Stop scoreboard">Stop scoreboard (in minutes):</label>
+        <input type="text" class="field" name="lastmilescore" />
+        <label for="Penalty">Penalty (in minutes):</label>
+        <input type="text" class="field" name="penalty" />
+        <label for="Max file size allowed for teams"
+          >Max file size allowed for teams (in KB):</label
+        >
+        <input type="text" class="field" name="maxfilesize" />
+        <h4>Your PHP config. allows at most:</h4>
+        <label for="Contest main site URL (IP/bocafolder)"
+          >Contest main site URL (IP/bocafolder):</label
+        >
+        <input type="text" class="field" name="mainsiteurl" />
+        <label for="Contest main site number">Contest main site number:</label>
+        <input type="text" class="field" name="mainsite" />
+        <label for="Contest local site number"
+          >Contest local site number:</label
+        >
+        <input type="text" class="field" name="localsite" />
+        <div class="contest-buttons">
+          <input type="submit" name="Submit3" value="Send" />
+          <input type="submit" name="Submit3" value="Activate" />
+          <input type="reset" name="Submit4" value="Clear" />
+        </div>
+      </form>
+    </div>
+  </body>
+</html>

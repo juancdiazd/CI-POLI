@@ -1,0 +1,42 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta http-equiv="Content-Type" content="text/html; charset=utf-8" />
+    <title>System's Page</title>
+    <link rel="stylesheet" href="css/styles.css" type="text/css" />
+  </head>
+  <body>
+    <header>
+      <table>
+        <tr>
+          <th>BOCA</th>
+          <th>Username: Systems</th>
+          <th>contest not running</th>
+        </tr>
+      </table>
+      <nav>
+        <a href="contest.php">Contest</a>
+        <a href="importxml.php">Import</a>
+        <a href="option.php">Options</a>
+        <a href="../index.php">Logout</a>
+      </nav>
+    </header>
+    <div class="contest-form">
+      <form>
+        <h3>To import a pre-defined contest, just fill in the import file field.</h3>
+        <label for="localsite">Local site number:</label>
+        <input type="text" class="field" name="localsite" />
+        <p>Import file:</p>
+        <div class="browse">
+          <input type="submit" name="browse" value="Browse..." />
+        </div>
+        <div class="contest-buttons">
+            <div class="sys-import">
+                <input type="submit" name="Submit" value="Import" />
+                <input type="reset" name="Submit4" value="Clear" />
+            </div>
+        </div>
+      </form>
+    </div>
+  </body>
+</html>
